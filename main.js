@@ -1,9 +1,9 @@
 use2D = true;
 
-var mySprite = new Sprite();
+var ctx = canvas.getContext("2d");
 
-mySprite.width = 100;
-mySprite.height = 100;
+function bgpaint() {
+	ctx.fillStyle = "#499db6";
+	ctx.fillRect(0,0,canvas.width, canvas.height);
+}
 
-mySprite.image = Textures.load("http://i.imgur.com/v4g3j0c.png");
-world.addChild(mySprite);
